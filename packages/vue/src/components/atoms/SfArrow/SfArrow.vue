@@ -1,21 +1,20 @@
-<template functional>
+<template>
   <component
-    :is="injections.components.SfButton"
-    :class="[data.class, data.staticClass, 'sf-arrow']"
-    :style="[data.style, data.staticStyle]"
+    :is="components.SfButton"
+    :class="[$attrs.class, 'sf-arrow']"
+    :style="[$attrs.style]"
     type="button"
-    v-bind="data.attrs"
-    v-on="listeners"
+    v-bind="$attrs"
   >
     <!--@slot Use this slot to replace arrow icon-->
     <slot>
       <component
-        :is="injections.components.SfIcon"
+        :is="components.SfIcon"
         size="1.5rem"
         icon="arrow_left"
         aria-hidden="true"
-        v-bind="data.attrs"
-        :class="[data.class, data.staticClass, 'sf-arrow__icon']"
+        v-bind="$attrs"
+        :class="[$attrs.class, 'sf-arrow__icon']"
       />
     </slot>
   </component>

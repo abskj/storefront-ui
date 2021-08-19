@@ -1,30 +1,28 @@
-<template functional>
+<template>
   <span
     ref="icon"
     :class="[
-      data.class,
-      data.staticClass,
+      $attrs.class,
       'sf-icon',
-      $options.iconColorClass(props.color),
-      $options.iconSizeClass(props.size),
+      $options.iconColorClass($props.color),
+      $options.iconSizeClass($props.size),
     ]"
     :style="[
-      data.style,
-      data.staticStyle,
-      $options.iconCustomStyle(props.color, props.size),
+      $attrs.style,
+      $attrs.staticStyle,
+      $options.iconCustomStyle($props.color, $props.size),
     ]"
-    v-bind="data.attrs"
-    v-on="listeners"
+    v-bind="$attrs"
   >
-    <slot v-bind="{ props }">
+    <slot v-bind="{ $props }">
       <svg
         class="sf-icon-path"
-        :viewBox="$options.iconViewBox(props.icon, props.viewBox)"
+        :viewBox="$options.iconViewBox($props.icon, $props.viewBox)"
         preserveAspectRatio="none"
       >
-        <defs v-if="props.coverage < 1">
-          <linearGradient :id="props.coverage" x1="0" y1="0" x2="1" y2="0">
-            <stop :offset="props.coverage" stop-color="var(--icon-color)" />
+        <defs v-if="$props.coverage < 1">
+          <linearGradient :id="$props.coverage" x1="0" y1="0" x2="1" y2="0">
+            <stop :offset="$props.coverage" stop-color="var(--icon-color)" />
             <stop
               offset="0"
               stop-color="var(--icon-color-negative, var(--c-gray-variant))"
@@ -32,10 +30,10 @@
           </linearGradient>
         </defs>
         <path
-          v-for="(path, index) in $options.iconPaths(props.icon)"
+          v-for="(path, index) in $options.iconPaths($props.icon)"
           :key="index"
           :d="path"
-          :fill="$options.fillPath(props.coverage)"
+          :fill="$options.fillPath($props.coverage)"
           style="height: 100%"
         />
       </svg>
@@ -92,7 +90,7 @@ export default {
      * Custom viewBox size of the icon
      * It should be according to the standard `"min-x min-y width height"`.
      * By default it will be `0 0 24 24`. If you use our icons, you don't need to pass this prop at all.
-     * Recommendations: try to get your SVG designed with our default viewBox value and reduce the number of props passed to the component.
+     * Recommendations: try to get your SVG designed with our default viewBox value and reduce the number of $props passed to the component.
      */
     viewBox: {
       type: String,

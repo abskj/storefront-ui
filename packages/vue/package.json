@@ -3,8 +3,8 @@
   "version": "0.10.8",
   "license": "MIT",
   "scripts": {
-    "serve": "yarn create-index-files && vue-cli-service serve",
-    "build": "yarn create-index-files && vue-cli-service build --target lib --name storefront-ui ./src/index.js",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name storefront-ui ./src/index.js",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "cypress open",
     "test:e2e:headless": "cypress run --headless",
