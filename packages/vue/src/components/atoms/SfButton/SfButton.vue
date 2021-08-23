@@ -2,7 +2,6 @@
   <component
     :is="$props.link ? components.SfLink : 'button'"
     :class="[
-      $attrs.class,
       'sf-button',
       {
         'is-disabled--button': $options.buttonActive(
@@ -12,7 +11,6 @@
         'is-disabled--link': $options.linkActive($props.link, $props.disabled),
       },
     ]"
-    :style="$attrs.style"
     :disabled="$props.disabled"
     :link="$props.link"
     v-bind="$attrs"

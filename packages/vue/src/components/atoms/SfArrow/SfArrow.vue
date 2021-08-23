@@ -1,8 +1,7 @@
 <template>
   <component
     :is="components.SfButton"
-    :class="[$attrs.class, 'sf-arrow']"
-    :style="[$attrs.style]"
+    class="sf-arrow"
     type="button"
     v-bind="$attrs"
   >
@@ -14,7 +13,7 @@
         icon="arrow_left"
         aria-hidden="true"
         v-bind="$attrs"
-        :class="[$attrs.class, 'sf-arrow__icon']"
+        class="sf-arrow__icon"
       />
     </slot>
   </component>

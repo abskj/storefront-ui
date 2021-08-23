@@ -2,16 +2,11 @@
   <span
     ref="icon"
     :class="[
-      $attrs.class,
       'sf-icon',
       $options.iconColorClass($props.color),
       $options.iconSizeClass($props.size),
     ]"
-    :style="[
-      $attrs.style,
-      $attrs.staticStyle,
-      $options.iconCustomStyle($props.color, $props.size),
-    ]"
+    :style="$options.iconCustomStyle($props.color, $props.size)"
     v-bind="$attrs"
   >
     <slot v-bind="{ $props }">

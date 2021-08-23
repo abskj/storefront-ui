@@ -15,6 +15,11 @@ export default {
     SfArrow,
     Demo,
   },
+  methods: {
+    testClick(){
+      alert("detected click");
+    }
+  }
 };
 </script>
 
