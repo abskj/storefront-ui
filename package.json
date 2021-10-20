@@ -28,7 +28,8 @@
   },
   "homepage": "https://github.com/vuestorefront/storefront-ui#readme",
   "workspaces": [
-    "packages/*"
+    "packages/shared",
+    "packages/next"
   ],
   "husky": {
     "hooks": {

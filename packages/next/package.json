@@ -1,0 +1,31 @@
+{
+  "name": "sfui-next",
+  "files": [
+    "dist"
+  ],
+  "version": "0.0.0",
+  "main": "./dist/sfui.umd.js",
+  "module": "./dist/sfui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/sfui.es.js",
+      "require": "./dist/sfui.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "create-index-files": "node scripts/create-index-files.js"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "@storefront-ui/shared": "0.11.0-rc.1",
+    "vue": "^3.2.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "sass": "^1.43.2",
+    "vite": "^2.6.4"
+  }
+}
