@@ -1,4 +1,4 @@
-import { SfProperty, SfBadge } from "@storefront-ui/vue";
+import { SfProperty, SfBadge } from "../../../../index.js";
 
 export default {
   title: "Components/Atoms/Property",

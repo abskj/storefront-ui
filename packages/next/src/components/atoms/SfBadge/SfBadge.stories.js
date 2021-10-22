@@ -1,4 +1,4 @@
-import { SfBadge, SfIcon } from "@storefront-ui/vue";
+import { SfBadge, SfIcon } from "../../../../index.js";
 
 export default {
   title: "Components/Atoms/Badge",

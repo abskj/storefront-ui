@@ -1,5 +1,5 @@
 import { icons } from "@storefront-ui/shared/icons/icons";
-import { SfCircleIcon } from "@storefront-ui/vue";
+import { SfCircleIcon } from "../../../../index.js";
 const iconsNames = Object.keys(icons);
 
 export default {

@@ -1,4 +1,4 @@
-import { SfArrow, SfIcon } from "@storefront-ui/vue";
+import { SfArrow, SfIcon } from "../../../../index.js";
 
 export default {
   title: "Components/Atoms/Arrow",

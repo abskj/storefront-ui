@@ -1,4 +1,4 @@
-import { SfQuantitySelector } from "@storefront-ui/vue";
+import { SfQuantitySelector } from "../../../../index.js";
 
 export default {
   title: "Components/Atoms/QuantitySelector",

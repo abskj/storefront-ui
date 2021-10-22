@@ -1,4 +1,4 @@
-import { SfButton } from "@storefront-ui/vue";
+import { SfButton } from "../../../../index.js";
 
 export default {
   title: "Components/Atoms/Button",

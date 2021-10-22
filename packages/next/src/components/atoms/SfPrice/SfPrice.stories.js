@@ -1,4 +1,4 @@
-import { SfPrice, SfBadge } from "@storefront-ui/vue";
+import { SfPrice, SfBadge } from "../../../../index.js";
 
 export default {
   title: "Components/Atoms/Price",

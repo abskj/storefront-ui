@@ -1,4 +1,4 @@
-import { SfInput, SfIcon } from "@storefront-ui/vue";
+import { SfInput, SfIcon } from "../../../../index.js";
 
 export default {
   title: "Components/Atoms/Input",

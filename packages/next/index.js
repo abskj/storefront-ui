@@ -5,7 +5,7 @@ import SfBreadcrumbs from "./src/components/atoms/SfBreadcrumbs/SfBreadcrumbs.vu
 import SfBullets from "./src/components/atoms/SfBullets/SfBullets.vue";
 import SfButton from "./src/components/atoms/SfButton/SfButton.vue";
 import SfChevron from "./src/components/atoms/SfChevron/SfChevron.vue";
-import SfCimage from "./src/components/atoms/SfCimage/SfCimage.vue";
+// import SfCimage from "./src/components/atoms/SfCimage/SfCimage.vue";
 import SfCircleIcon from "./src/components/atoms/SfCircleIcon/SfCircleIcon.vue";
 import SfColor from "./src/components/atoms/SfColor/SfColor.vue";
 import SfDivider from "./src/components/atoms/SfDivider/SfDivider.vue";
@@ -30,7 +30,7 @@ let componentsList = [
   SfBullets,
   SfButton,
   SfChevron,
-  SfCimage,
+  // SfCimage,
   SfCircleIcon,
   SfColor,
   SfDivider,
@@ -61,7 +61,7 @@ export {
   SfBullets,
   SfButton,
   SfChevron,
-  SfCimage,
+  // SfCimage,
   SfCircleIcon,
   SfColor,
   SfDivider,

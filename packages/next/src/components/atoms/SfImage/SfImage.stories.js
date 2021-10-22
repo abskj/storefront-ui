@@ -1,4 +1,4 @@
-import { SfImage } from "@storefront-ui/vue";
+import { SfImage } from "../../../../index.js";
 
 export default {
   title: "Components/Atoms/Image",

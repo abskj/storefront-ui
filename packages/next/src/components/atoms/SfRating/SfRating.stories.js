@@ -1,4 +1,4 @@
-import { SfRating, SfIcon } from "@storefront-ui/vue";
+import { SfRating, SfIcon } from "../../../../index.js";
 
 export default {
   title: "Components/Atoms/Rating",

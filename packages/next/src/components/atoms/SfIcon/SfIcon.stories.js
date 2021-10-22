@@ -1,7 +1,7 @@
 import { icons } from "@storefront-ui/shared/icons/icons";
 import { sizesValues as sizes } from "@storefront-ui/shared/variables/sizes";
 import { iconColorsValues as colors } from "@storefront-ui/shared/variables/colors";
-import { SfIcon } from "@storefront-ui/vue";
+import { SfIcon } from "../../../../index.js";
 const iconsNames = Object.keys(icons);
 
 export default {

@@ -1,4 +1,4 @@
-import { SfLoader, SfImage } from "@storefront-ui/vue";
+import { SfLoader, SfImage } from "../../../../index.js";
 
 export default {
   title: "Components/Atoms/Loader",

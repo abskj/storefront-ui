@@ -1,4 +1,4 @@
-import { SfBreadcrumbs } from "@storefront-ui/vue";
+import { SfBreadcrumbs } from "../../../../index.js";
 
 export default {
   title: "Components/Atoms/Breadcrumbs",
