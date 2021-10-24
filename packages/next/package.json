@@ -18,7 +18,8 @@
     "serve": "vite preview",
     "create-index-files": "node scripts/create-index-files.js",
     "storybook": "start-storybook -p 6006 --no-manager-cache",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test:unit": "jest"
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
@@ -28,7 +29,8 @@
     "@storybook/addon-storysource": "^6.3.12",
     "@storybook/preset-scss": "^1.0.3",
     "cloudinary-build-url": "^0.2.1",
-    "vue": "^3.2.16"
+    "vue": "^3.2.16",
+    "vue3-jest": "^27.0.0-alpha.1"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
@@ -37,7 +39,11 @@
     "@storybook/addon-links": "^6.4.0-beta.19",
     "@storybook/vue3": "^6.4.0-beta.19",
     "@vitejs/plugin-vue": "^1.9.3",
+    "@vue/babel-preset-app": "^4.5.14",
+    "@vue/test-utils": "^2.0.0-rc.16",
     "babel-loader": "^8.2.3",
+    "jest": "^27.3.1",
+    "jest-transform-stub": "^2.0.0",
     "sass": "^1.43.2",
     "storybook-builder-vite": "^0.1.2",
     "vite": "^2.6.4",

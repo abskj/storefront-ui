@@ -1,5 +1,5 @@
 <template>
-  <div class="sf-badge" v-bind="$attrs">
+  <div class="sf-badge">
     <!--@slot Use this slot to place content inside the badge-->
     <slot />
   </div>
