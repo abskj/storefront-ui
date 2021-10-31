@@ -14,7 +14,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "yarn create-index-files && vite build",
     "serve": "vite preview",
     "create-index-files": "node scripts/create-index-files.js",
     "storybook": "start-storybook -p 6006 --no-manager-cache",

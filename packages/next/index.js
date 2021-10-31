@@ -5,7 +5,6 @@ import SfBreadcrumbs from "./src/components/atoms/SfBreadcrumbs/SfBreadcrumbs.vu
 import SfBullets from "./src/components/atoms/SfBullets/SfBullets.vue";
 import SfButton from "./src/components/atoms/SfButton/SfButton.vue";
 import SfChevron from "./src/components/atoms/SfChevron/SfChevron.vue";
-// import SfCimage from "./src/components/atoms/SfCimage/SfCimage.vue";
 import SfCircleIcon from "./src/components/atoms/SfCircleIcon/SfCircleIcon.vue";
 import SfColor from "./src/components/atoms/SfColor/SfColor.vue";
 import SfDivider from "./src/components/atoms/SfDivider/SfDivider.vue";
@@ -23,37 +22,6 @@ import SfRating from "./src/components/atoms/SfRating/SfRating.vue";
 import SfSkeleton from "./src/components/atoms/SfSkeleton/SfSkeleton.vue";
 import SfTextarea from "./src/components/atoms/SfTexarea/SfTextarea.vue";
 
-let componentsList = [
-  SfArrow,
-  SfBadge,
-  SfBreadcrumbs,
-  SfBullets,
-  SfButton,
-  SfChevron,
-  // SfCimage,
-  SfCircleIcon,
-  SfColor,
-  SfDivider,
-  SfHeading,
-  SfIcon,
-  SfImage,
-  SfInput,
-  SfLink,
-  SfLoader,
-  SfOverlay,
-  SfPrice,
-  SfProperty,
-  SfQuantitySelector,
-  SfRating,
-  SfSkeleton,
-  SfTextarea
-]
-function install(appInstance){
-  componentsList.forEach(component=> {
-    appInstance.component(component.name, component)
-  })
-}
-
 export {
   SfArrow,
   SfBadge,
@@ -61,7 +29,6 @@ export {
   SfBullets,
   SfButton,
   SfChevron,
-  // SfCimage,
   SfCircleIcon,
   SfColor,
   SfDivider,
@@ -78,7 +45,33 @@ export {
   SfRating,
   SfSkeleton,
   SfTextarea
-}
-export default {
-  install
-}
+};
+const componentsList = [
+  SfArrow,
+  SfBadge,
+  SfBreadcrumbs,
+  SfBullets,
+  SfButton,
+  SfChevron,
+  SfCircleIcon,
+  SfColor,
+  SfDivider,
+  SfHeading,
+  SfIcon,
+  SfImage,
+  SfInput,
+  SfLink,
+  SfLoader,
+  SfOverlay,
+  SfPrice,
+  SfProperty,
+  SfQuantitySelector,
+  SfRating,
+  SfSkeleton,
+  SfTextarea
+];
+export default function install(appInstance){
+      componentsList.forEach(component=> {
+        appInstance.component(component.name, component)
+      })
+    }

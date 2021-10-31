@@ -33,7 +33,15 @@ function generateFilesContent() {
     "\n\n" +
     "export {\n" +
     exports.join(",\n") +
-    "\n};\n";
+    "\n};\n"+
+    "const componentsList = [\n" +
+    exports.join(",\n") +
+    "\n];\n"+
+    `export default function install(appInstance){
+      componentsList.forEach(component=> {
+        appInstance.component(component.name, component)
+      })
+    }`;
   return {
     contentIndexJs,
   };
